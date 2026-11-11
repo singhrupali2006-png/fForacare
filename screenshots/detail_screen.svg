@@ -1,0 +1,132 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 760" width="380" height="760">
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Device Frame Outer -->
+  <rect x="5" y="5" width="370" height="750" rx="42" fill="#1e1e1e" filter="url(#phoneShadow)"/>
+  <rect x="7" y="7" width="366" height="746" rx="40" fill="none" stroke="#333333" stroke-width="2.5"/>
+
+  <!-- Screen Canvas -->
+  <g clip-path="url(#screenClip)">
+    <clipPath id="screenClip">
+      <rect x="13" y="13" width="354" height="734" rx="34"/>
+    </clipPath>
+
+    <!-- App Background -->
+    <rect x="13" y="13" width="354" height="734" fill="#FBFDF8"/>
+
+    <!-- Status Bar -->
+    <g transform="translate(13, 13)">
+      <circle cx="177" cy="14" r="5" fill="#111111"/>
+      <text x="32" y="18" class="font" font-size="12" font-weight="600" fill="#1B1C18">9:41</text>
+      <g transform="translate(300, 8)" fill="#1B1C18">
+        <path d="M1 8h2v3H1zm4-3h2v6H5zm4-3h2v9H9zm4-2h2v11h-2z"/>
+        <path d="M22 2a11 11 0 00-7.8 3.2l7.8 9.5 7.8-9.5A11 11 0 0022 2z" transform="scale(0.8) translate(8, 0)"/>
+        <rect x="30" y="3" width="16" height="8" rx="2" fill="none" stroke="#1B1C18" stroke-width="1.2"/>
+        <rect x="32" y="5" width="11" height="4" rx="1" fill="#1B1C18"/>
+        <path d="M47 5.5v3" stroke="#1B1C18" stroke-width="1.2"/>
+      </g>
+    </g>
+
+    <!-- App Bar with Back, Title, Actions -->
+    <g transform="translate(13, 46)">
+      <!-- Back arrow -->
+      <path d="M26 27l6-6M26 27l6 6M26 27h16" stroke="#1B1C18" stroke-width="2" stroke-linecap="round"/>
+      <text x="56" y="32" class="font" font-size="18" font-weight="700" fill="#1B1C18">Monstera Deliciosa</text>
+      <!-- Edit icon -->
+      <path d="M285 20l7 7-10 10-7-7 10-10z" fill="none" stroke="#1B1C18" stroke-width="1.6"/>
+      <!-- Delete icon -->
+      <path d="M320 20h14M323 20v14a2 2 0 002 2h4a2 2 0 002-2V20" stroke="#1B1C18" stroke-width="1.6" fill="none"/>
+    </g>
+
+    <!-- Hero Plant Circle -->
+    <g transform="translate(190, 155)">
+      <circle cx="0" cy="0" r="50" fill="#D8E7D7"/>
+      <!-- Plant icon -->
+      <path d="M0 -24c-12 0-22 9.5-22 22 0 16 22 30 22 30s22-14 22-30c0-12.5-10-22-22-22z" fill="#2E7D32"/>
+      <path d="M0 -14v28M0 -6l-8 7M0 2l8 7" stroke="#A9D3AB" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Status Text -->
+    <text x="190" y="235" class="font" font-size="20" font-weight="700" fill="#BA1A1A" text-anchor="middle">Water today</text>
+
+    <!-- Action Button (Mark as watered) -->
+    <g transform="translate(35, 255)">
+      <rect width="310" height="50" rx="25" fill="#2E7D32"/>
+      <g transform="translate(90, 15)">
+        <path d="M8 2C8 2 2 9 2 12.5a6 6 0 0012 0C14 9 8 2 8 2z" fill="#FFFFFF"/>
+        <text x="24" y="14" class="font" font-size="15" font-weight="600" fill="#FFFFFF">Mark as watered</text>
+      </g>
+    </g>
+
+    <!-- Divider -->
+    <line x1="35" y1="325" x2="345" y2="325" stroke="#E1E4DD" stroke-width="1"/>
+
+    <!-- Info Tile 1: Species -->
+    <g transform="translate(35, 338)">
+      <circle cx="18" cy="20" r="16" fill="#F0F5EE"/>
+      <path d="M14 24a4 4 0 018 0M18 14v4" stroke="#2E7D32" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#74796E">Species</text>
+      <text x="44" y="32" class="font" font-size="14.5" font-weight="600" fill="#1B1C18">Monstera deliciosa</text>
+    </g>
+
+    <!-- Info Tile 2: Location -->
+    <g transform="translate(35, 395)">
+      <circle cx="18" cy="20" r="16" fill="#F0F5EE"/>
+      <path d="M18 12a5 5 0 00-5 5c0 4 5 9 5 9s5-5 5-9a5 5 0 00-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z" fill="#2E7D32"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#74796E">Location</text>
+      <text x="44" y="32" class="font" font-size="14.5" font-weight="600" fill="#1B1C18">Living Room (near balcony window)</text>
+    </g>
+
+    <!-- Info Tile 3: Sunlight -->
+    <g transform="translate(35, 452)">
+      <circle cx="18" cy="20" r="16" fill="#F0F5EE"/>
+      <circle cx="18" cy="20" r="4" fill="none" stroke="#2E7D32" stroke-width="1.8"/>
+      <path d="M18 13v2M18 25v2M11 20h2M23 20h2" stroke="#2E7D32" stroke-width="1.8"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#74796E">Sunlight</text>
+      <text x="44" y="32" class="font" font-size="14.5" font-weight="600" fill="#1B1C18">Bright indirect</text>
+    </g>
+
+    <!-- Info Tile 4: Watering Schedule -->
+    <g transform="translate(35, 509)">
+      <circle cx="18" cy="20" r="16" fill="#F0F5EE"/>
+      <path d="M13 18a5 5 0 019-2M23 22a5 5 0 01-9 2" stroke="#2E7D32" stroke-width="1.8" fill="none"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#74796E">Watering schedule</text>
+      <text x="44" y="32" class="font" font-size="14.5" font-weight="600" fill="#1B1C18">Every 7 days</text>
+    </g>
+
+    <!-- Info Tile 5: Last Watered -->
+    <g transform="translate(35, 566)">
+      <circle cx="18" cy="20" r="16" fill="#F0F5EE"/>
+      <circle cx="18" cy="20" r="7" stroke="#2E7D32" stroke-width="1.8" fill="none"/>
+      <path d="M18 16v4h3" stroke="#2E7D32" stroke-width="1.6"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#74796E">Last watered</text>
+      <text x="44" y="32" class="font" font-size="14.5" font-weight="600" fill="#1B1C18">Nov 4, 2026</text>
+    </g>
+
+    <!-- Info Tile 6: Next Watering -->
+    <g transform="translate(35, 623)">
+      <circle cx="18" cy="20" r="16" fill="#FFDAD6"/>
+      <rect x="12" y="14" width="12" height="12" rx="2" stroke="#BA1A1A" stroke-width="1.8" fill="none"/>
+      <path d="M14 19l2 2 4-4" stroke="#BA1A1A" stroke-width="1.6"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#BA1A1A">Next watering</text>
+      <text x="44" y="32" class="font" font-size="14.5" font-weight="600" fill="#BA1A1A">Nov 11, 2026 (Today)</text>
+    </g>
+
+    <!-- Info Tile 7: Notes -->
+    <g transform="translate(35, 680)">
+      <circle cx="18" cy="20" r="16" fill="#F0F5EE"/>
+      <path d="M13 16h10M13 20h8M13 24h5" stroke="#2E7D32" stroke-width="1.8"/>
+      <text x="44" y="14" class="font" font-size="12" fill="#74796E">Notes</text>
+      <text x="44" y="32" class="font" font-size="13" font-weight="500" fill="#1B1C18">Mist leaves weekly; wipe dust off regularly.</text>
+    </g>
+
+  </g>
+</svg>

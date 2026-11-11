@@ -1,0 +1,123 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 760" width="380" height="760">
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Device Frame Outer -->
+  <rect x="5" y="5" width="370" height="750" rx="42" fill="#1e1e1e" filter="url(#phoneShadow)"/>
+  <rect x="7" y="7" width="366" height="746" rx="40" fill="none" stroke="#333333" stroke-width="2.5"/>
+
+  <!-- Screen Canvas -->
+  <g clip-path="url(#screenClip)">
+    <clipPath id="screenClip">
+      <rect x="13" y="13" width="354" height="734" rx="34"/>
+    </clipPath>
+
+    <!-- App Background -->
+    <rect x="13" y="13" width="354" height="734" fill="#FBFDF8"/>
+
+    <!-- Status Bar -->
+    <g transform="translate(13, 13)">
+      <circle cx="177" cy="14" r="5" fill="#111111"/>
+      <text x="32" y="18" class="font" font-size="12" font-weight="600" fill="#1B1C18">9:41</text>
+      <g transform="translate(300, 8)" fill="#1B1C18">
+        <path d="M1 8h2v3H1zm4-3h2v6H5zm4-3h2v9H9zm4-2h2v11h-2z"/>
+        <path d="M22 2a11 11 0 00-7.8 3.2l7.8 9.5 7.8-9.5A11 11 0 0022 2z" transform="scale(0.8) translate(8, 0)"/>
+        <rect x="30" y="3" width="16" height="8" rx="2" fill="none" stroke="#1B1C18" stroke-width="1.2"/>
+        <rect x="32" y="5" width="11" height="4" rx="1" fill="#1B1C18"/>
+        <path d="M47 5.5v3" stroke="#1B1C18" stroke-width="1.2"/>
+      </g>
+    </g>
+
+    <!-- App Bar -->
+    <g transform="translate(13, 46)">
+      <rect x="0" y="0" width="354" height="54" fill="#FBFDF8"/>
+      <g transform="translate(18, 14)">
+        <path d="M12 2C6.5 2 2 6.5 2 12c0 6.6 10 12 10 12s10-5.4 10-12c0-5.5-4.5-10-10-10zm0 19.5C9.2 18.7 4 14.7 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8c0 2.7-5.2 6.7-8 9.5z" fill="#2E7D32"/>
+        <text x="30" y="18" class="font" font-size="20" font-weight="700" fill="#1B1C18">Plant Care Tips</text>
+      </g>
+      <circle cx="324" cy="27" r="16" fill="#F0F4EC"/>
+      <path d="M324 20a7 7 0 000 14V20z" fill="#1B1C18"/>
+      <circle cx="324" cy="27" r="7" fill="none" stroke="#1B1C18" stroke-width="1.5"/>
+    </g>
+
+    <!-- Tip 1: Check Soil -->
+    <g transform="translate(25, 115)">
+      <rect width="330" height="96" rx="18" fill="#F0F5EE"/>
+      <circle cx="36" cy="48" r="22" fill="#D8E7D7"/>
+      <!-- Water drop -->
+      <path d="M36 38c0 0-5 6-5 9a5 5 0 0010 0c0-3-5-9-5-9z" fill="#1B5E20"/>
+      <text x="70" y="36" class="font" font-size="14.5" font-weight="700" fill="#1B1C18">Check the soil first</text>
+      <text x="70" y="55" class="font" font-size="12" fill="#44483E">Push a finger about 2 cm into soil.</text>
+      <text x="70" y="73" class="font" font-size="12" fill="#44483E">If dry, water; if damp, wait 1–2 days.</text>
+    </g>
+
+    <!-- Tip 2: Match Light -->
+    <g transform="translate(25, 221)">
+      <rect width="330" height="96" rx="18" fill="#F0F5EE"/>
+      <circle cx="36" cy="48" r="22" fill="#D8E7D7"/>
+      <!-- Sun icon -->
+      <circle cx="36" cy="48" r="5" fill="#1B5E20"/>
+      <path d="M36 39v2M36 55v2M27 48h2M43 48h2" stroke="#1B5E20" stroke-width="2"/>
+      <text x="70" y="36" class="font" font-size="14.5" font-weight="700" fill="#1B1C18">Match light to the plant</text>
+      <text x="70" y="55" class="font" font-size="12" fill="#44483E">Succulents love bright sun, while ferns</text>
+      <text x="70" y="73" class="font" font-size="12" fill="#44483E">and pothos thrive in low to medium light.</text>
+    </g>
+
+    <!-- Tip 3: Avoid overwatering -->
+    <g transform="translate(25, 327)">
+      <rect width="330" height="96" rx="18" fill="#F0F5EE"/>
+      <circle cx="36" cy="48" r="22" fill="#D8E7D7"/>
+      <path d="M36 38c-4 0-7 3.5-7 7.5 0 5 7 9.5 7 9.5s7-4.5 7-9.5c0-4-3-7.5-7-7.5z" fill="#1B5E20"/>
+      <text x="70" y="36" class="font" font-size="14.5" font-weight="700" fill="#1B1C18">Avoid overwatering</text>
+      <text x="70" y="55" class="font" font-size="12" fill="#44483E">Most common cause of plant distress.</text>
+      <text x="70" y="73" class="font" font-size="12" fill="#44483E">Always use pots with drainage holes.</text>
+    </g>
+
+    <!-- Tip 4: Keep temperatures steady -->
+    <g transform="translate(25, 433)">
+      <rect width="330" height="96" rx="18" fill="#F0F5EE"/>
+      <circle cx="36" cy="48" r="22" fill="#D8E7D7"/>
+      <!-- Thermometer -->
+      <path d="M36 38v10a4 4 0 102 0V38a1 1 0 00-2 0z" fill="#1B5E20"/>
+      <text x="70" y="36" class="font" font-size="14.5" font-weight="700" fill="#1B1C18">Keep temperatures steady</text>
+      <text x="70" y="55" class="font" font-size="12" fill="#44483E">Most houseplants prefer 18–27 °C.</text>
+      <text x="70" y="73" class="font" font-size="12" fill="#44483E">Avoid cold drafts and direct heating vents.</text>
+    </g>
+
+    <!-- Tip 5: Wipe leaves -->
+    <g transform="translate(25, 539)">
+      <rect width="330" height="96" rx="18" fill="#F0F5EE"/>
+      <circle cx="36" cy="48" r="22" fill="#D8E7D7"/>
+      <path d="M30 46l6 6 8-8" stroke="#1B5E20" stroke-width="2.2" fill="none"/>
+      <text x="70" y="36" class="font" font-size="14.5" font-weight="700" fill="#1B1C18">Wipe the leaves regularly</text>
+      <text x="70" y="55" class="font" font-size="12" fill="#44483E">Dust prevents efficient photosynthesis.</text>
+      <text x="70" y="73" class="font" font-size="12" fill="#44483E">Gently wipe leaves with a damp cloth.</text>
+    </g>
+
+    <!-- Bottom Navigation Bar -->
+    <g transform="translate(13, 660)">
+      <rect width="354" height="74" fill="#F0F4EC"/>
+      <line x1="0" y1="0" x2="354" y2="0" stroke="#E1E4DD" stroke-width="1"/>
+
+      <g transform="translate(48, 12)">
+        <path d="M32 8c-3 0-5 2.5-5 5.5 0 4 5 8.5 5 8.5s5-4.5 5-8.5c0-3-2-5.5-5-5.5z" fill="none" stroke="#44483E" stroke-width="1.8"/>
+        <text x="32" y="44" class="font" font-size="11" font-weight="500" fill="#44483E" text-anchor="middle">My plants</text>
+      </g>
+
+      <g transform="translate(242, 12)">
+        <rect x="0" y="0" width="64" height="30" rx="15" fill="#D8E7D7"/>
+        <circle cx="32" cy="15" r="7" fill="#1B5E20"/>
+        <path d="M30 22h4" stroke="#1B5E20" stroke-width="2"/>
+        <text x="32" y="44" class="font" font-size="11" font-weight="700" fill="#1B1C18" text-anchor="middle">Care tips</text>
+      </g>
+    </g>
+
+  </g>
+</svg>
